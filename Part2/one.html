@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+    .bg-black{
+        background-color:#212121;
+        color:#fff
+    }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- <div >
+        <h1 id="title" class="heading" >DOM Learning on chai and code  <span style="display:none">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h1>
+            <h2>Loremipsum dolong elit. Quisquam, voluptatum.</h2>
+            <h2>Lorem assiatic anumail</h2>
+            <h2>ram is honest man</h2>
+            <p>lorem ipsum is best</p>
+        </h1>
+
+        </div>
+    </div> -->
+    <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Thursday</div>
+            <div class="day">Wednesday</div>
+    </div>        
+    
+</body>
+<script>
+    const parent=document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[0].innerHTML);
+
+
+    // console.log(parent.children.length);
+
+//     for(let i=0;i<parent.children.length;i++)
+//    {
+//     console.log(parent.children[i].innerHTML);
+//    }
+   parent.children[1].style.color="orange";
+   parent.children[2].style.color="red";
+
+//    console.log(parent.firstElementChild);
+//    console.log(parent.lastElementChild);
+
+   const dayOne=document.querySelector('.day')
+   console.log(dayOne)
+   console.log(dayOne.parentElement);
+   console.log(dayOne.nextElementSibling)
+   console.log("NODES: ", parent.childNodes);
+</script>
+</html>
